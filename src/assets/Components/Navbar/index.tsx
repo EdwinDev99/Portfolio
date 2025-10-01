@@ -5,7 +5,7 @@ type Props = {};
 
 function Navbar({}: Props) {
   return (
-    <nav className="container-nav ">
+    <nav className="container-nav z-3 sticky-top ">
       <div>
         <a href="#" className="fs-4 fw-bold text-white text-decoration-none">
           EA
@@ -20,7 +20,7 @@ function Navbar({}: Props) {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">
+            <a className="nav-link text-white" href="#about">
               About
             </a>
           </li>

@@ -9,7 +9,7 @@ type Props = {};
 
 function Aboutme({}: Props) {
   return (
-    <div className="container ">
+    <div id="about" className="container ">
       <div className="about-me">
         <div className="m-5">
           <h1> About Me</h1>

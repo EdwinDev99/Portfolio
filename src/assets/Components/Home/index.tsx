@@ -8,7 +8,7 @@ type Props = {};
 
 function index({}: Props) {
   return (
-    <div className="container-aboutme">
+    <div id="home" className="container-aboutme">
       <section className="aboutme">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
