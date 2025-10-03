@@ -25,7 +25,12 @@ function Navbar({}: Props) {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">
+            <a className="nav-link text-white" href="#projects">
+              Projects
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-white" href="#projects">
               Projects
             </a>
           </li>

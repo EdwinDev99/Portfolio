@@ -1,0 +1,30 @@
+.text-projects {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b6bdc5;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: #020817;
+  border-radius: 1.5rem;
+  padding: 40px 20px;
+  width: 25rem;
+  border: solid 2px;
+}
+
+.img-card {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}

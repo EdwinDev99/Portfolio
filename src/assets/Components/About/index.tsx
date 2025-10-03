@@ -58,7 +58,7 @@ function Aboutme({}: Props) {
         </div>
         <div className="profile">
           <img src={edwinayerbe} alt="img" className="image-profile" />
-          <h3>Edwin ayerbe</h3>
+          <h3>Edwin Ayerbe</h3>
           <p>Front-End Developer</p>
           <button className="btn btn-primary">Download Resume</button>
         </div>
