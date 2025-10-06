@@ -1,10 +1,19 @@
 .text-projects {
-  font-family: "Inter", sans-serif;
+   font-family: "Inter", sans-serif; 
   font-size: 1rem;
-  line-height: 1.6;
-  color: #b6bdc5;
-  margin-bottom: 1.5rem;
-  text-align: justify;
+  line-height: 1.6; 
+  color: #4b5563; 
+  margin-bottom: 1.5rem; 
+  text-align: justify; /
+}
+
+.container-project{
+  display: flex;
+  align-content: center;
+  justify-content: center ;
+  flex-direction: column;
+  height: 100vh;
+
 }
 
 .container-cards {

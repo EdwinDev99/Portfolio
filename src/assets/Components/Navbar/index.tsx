@@ -30,8 +30,8 @@ function Navbar({}: Props) {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#projects">
-              Projects
+            <a className="nav-link text-white" href="#skills">
+              Skills
             </a>
           </li>
           <li className="nav-item">

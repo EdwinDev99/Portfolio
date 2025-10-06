@@ -1,0 +1,37 @@
+.container-skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:90vh;
+}
+
+
+.text-skills {
+   font-family: "Inter", sans-serif; 
+  font-size: 1rem;
+  line-height: 1.6; 
+  color: #4b5563; 
+  margin-bottom: 1.5rem; 
+  text-align: justify; /
+
+}
+.skills-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 80px); /* 2 filas de 80px de alto */
+  grid-auto-flow: column; /* llenar por columnas en lugar de filas */
+  gap: 20px;
+  max-width: 60vw;
+  
+}
+
+.skill-icons {
+  width: 60px;     /* tamaño fijo */
+  height: 60px;    /* mantiene proporción */
+  margin: 10px;    /* espacio entre íconos */
+  transition: transform 0.2s ease-in-out; /* animación suave */
+  
+}
+
+.skill-icons:hover {
+  transform: scale(1.1); /* efecto hover */
+}

@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
   gap: 10rem;
-  height: 80vh;
+  height: 100vh;
 }
 .name {
   font-size: 4rem;

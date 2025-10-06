@@ -8,7 +8,7 @@ type Props = {};
 
 function Projects({}: Props) {
   return (
-    <div id="projects" className="container " style={{ height: "75vh" }}>
+    <div id="projects" className="container container-project">
       <div>
         <h1 className="text-white d-inline-block border-bottom border-3 border-primary pb-1">
           Projects
