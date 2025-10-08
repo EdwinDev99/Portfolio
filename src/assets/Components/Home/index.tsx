@@ -60,15 +60,15 @@ function index({}: Props) {
           <button className="btn btn-primary">Contact me</button>
           <button className="btn btn-dark ">View Projects</button>
           <a href="https://github.com/EdwinDev99" target="_banck">
-            <TbBrandGithub color="#393456" className="fs-3  m-1" />
+            <TbBrandGithub color="#4B5563" className="fs-3  m-1" />
           </a>
           <a
             href="https://www.linkedin.com/in/edwin-ayerbe-749548210/"
             target="_blank"
           >
-            <FiLinkedin color="#393456" className="fs-3  m-1" />
+            <FiLinkedin color="#4B5563" className="fs-3  m-1" />
           </a>
-          <CgMail color="#393456" className="fs-3 m-1" />
+          <CgMail color="#4B5563" className="fs-3 m-1" />
         </motion.div>
       </section>
       <motion.div

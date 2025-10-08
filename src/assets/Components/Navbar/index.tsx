@@ -7,8 +7,8 @@ function Navbar({}: Props) {
   return (
     <nav className="container-nav z-3 sticky-top ">
       <div>
-        <a href="#" className="fs-4 fw-bold text-white text-decoration-none">
-          EA
+        <a href="#" className="fs-4 fw-bold text-primary text-decoration-none">
+          EA.
         </a>
       </div>
 
@@ -35,7 +35,7 @@ function Navbar({}: Props) {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white disabled" aria-disabled="true">
+            <a className="nav-link text-white" href="#contact">
               Contact
             </a>
           </li>
