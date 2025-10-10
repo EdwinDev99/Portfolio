@@ -41,7 +41,7 @@ function Navbar() {
           className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
           id="navbarNav"
         >
-          <ul className="navbar-nav ms-auto d-flex align-items-center gap-md-3 text-center">
+          <ul className="navbar-nav ms-auto d-flex align-items-start gap-md-3 text-center">
             <li className="nav-item">
               <a
                 className="nav-link text-white active"
