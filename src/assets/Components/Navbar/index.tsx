@@ -1,49 +1,109 @@
-import "./index.css";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineWaterDrop } from "react-icons/md";
+import "./index.css";
 
-type Props = {};
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-function Navbar({}: Props) {
   return (
-    <nav className="container-nav z-3 sticky-top ">
-      <div>
-        <a href="#" className="fs-4 fw-bold text-primary text-decoration-none">
+    <nav className="navbar navbar-expand-md sticky-top container-nav">
+      <div className="container d-flex justify-content-between align-items-center">
+        <a
+          href="#"
+          className="navbar-brand fs-4 fw-bold text-primary text-decoration-none"
+        >
           EA.
         </a>
-      </div>
 
-      <div className="d-flex align-items-center gap-3">
-        <ul className="nav">
-          <li className="nav-item">
-            <a className="nav-link text-white active" href="#">
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white" href="#about">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white" href="#projects">
-              Projects
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white" href="#skills">
-              Skills
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white" href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <MdOutlineWaterDrop size={24} style={{ color: "white" }} />
-        <button type="button" className="btn btn-primary">
-          Resume
-        </button>
+        {/* Ícono móvil + botón hamburguesa */}
+        <div className="d-flex align-items-center d-md-none">
+          <MdOutlineWaterDrop
+            size={22}
+            style={{ color: "white" }}
+            className="me-2"
+          />
+          <button
+            className="navbar-toggler border-0"
+            type="button"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? (
+              <FaTimes size={24} color="white" />
+            ) : (
+              <FaBars size={24} color="white" />
+            )}
+          </button>
+        </div>
+
+        {/* Contenido del menú */}
+        <div
+          className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
+          <ul className="navbar-nav ms-auto d-flex align-items-center gap-md-3 text-center">
+            <li className="nav-item">
+              <a
+                className="nav-link text-white active"
+                href="#"
+                onClick={() => setMenuOpen(false)}
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="#about"
+                onClick={() => setMenuOpen(false)}
+              >
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="#projects"
+                onClick={() => setMenuOpen(false)}
+              >
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="#skills"
+                onClick={() => setMenuOpen(false)}
+              >
+                Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="#contact"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </li>
+
+            {/* Ícono solo visible en desktop */}
+            <li className="nav-item d-none d-md-flex align-items-center">
+              <MdOutlineWaterDrop
+                size={22}
+                style={{ color: "white" }}
+                className="me-2"
+              />
+            </li>
+
+            <li className="nav-item">
+              <button type="button" className="btn btn-primary mt-2 mt-md-0">
+                Resume
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
