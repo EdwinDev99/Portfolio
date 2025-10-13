@@ -20,7 +20,7 @@ function Projects({}: Props) {
         </p>
       </div>
       <div>
-        <div className="container-cards">
+        <div className="d-flex flex-wrap justify-content-between gap-2">
           <CardProjects
             linkimg="https://edwindev99.github.io/Meal-Finder/"
             img={mealFinder}

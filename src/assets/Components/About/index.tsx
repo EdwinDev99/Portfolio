@@ -9,8 +9,8 @@ type Props = {};
 
 function Aboutme({}: Props) {
   return (
-    <div id="about" className="container text-white py-5">
-      <div className="vh-100 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-start text-start gap-4">
+    <div id="about" className="container text-white">
+      <div className="min-vh-100 d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
         <div className="m-3 m-lg-5">
           <h1 className="fw-bold mb-3">About Me</h1>
 

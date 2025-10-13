@@ -12,13 +12,7 @@
   align-content: center;
   justify-content: center ;
   flex-direction: column;
-  height: 100vh;
-
-}
-
-.container-cards {
-  display: flex;
-  justify-content: space-between;
+   min-height: 100vh; 
 }
 
 .project {
