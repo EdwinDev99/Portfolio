@@ -15,7 +15,8 @@ function Skills({}: Props) {
           managing application state, and creating efficient user experiences.
         </p>
       </div>
-      <div className="skills-grid">
+
+      <div className="skills-flex">
         <img
           className="skill-icons"
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"

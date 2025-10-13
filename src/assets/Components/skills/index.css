@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:90vh;
+  min-height:100vh;
 }
 
 
@@ -15,23 +15,24 @@
   text-align: justify; /
 
 }
-.skills-grid {
-  display: grid;
-  grid-template-rows: repeat(2, 80px); /* 2 filas de 80px de alto */
-  grid-auto-flow: column; /* llenar por columnas en lugar de filas */
-  gap: 20px;
-  max-width: 60vw;
-  
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;             
+  gap: 40px;                   
+  max-width: 60vw;             
+  margin: 0 auto;             
+  height: 150px;               
+  align-content: flex-start;   
 }
 
 .skill-icons {
-  width: 60px;     /* tamaño fijo */
-  height: 60px;    /* mantiene proporción */
-  margin: 10px;    /* espacio entre íconos */
-  transition: transform 0.2s ease-in-out; /* animación suave */
+  width: 70px;     
+  height: 70px;    
+   
+  transition: transform 0.2s ease-in-out; 
   
 }
 
 .skill-icons:hover {
-  transform: scale(1.1); /* efecto hover */
+  transform: scale(1.1); 
 }

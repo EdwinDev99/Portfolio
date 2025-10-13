@@ -89,7 +89,7 @@ function Home({}: Props) {
           stiffness: 100,
         }}
       >
-        <div className="code-card">
+        <div className="code-card w-100">
           <div className="code-header">
             <div className="circle red"></div>
             <div className="circle yellow"></div>
