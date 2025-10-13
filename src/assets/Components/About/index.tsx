@@ -9,15 +9,16 @@ type Props = {};
 
 function Aboutme({}: Props) {
   return (
-    <div id="about" className="container ">
-      <div className="about-me">
-        <div className="m-5">
-          <h1> About Me</h1>
+    <div id="about" className="container text-white py-5">
+      <div className="vh-100 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-start text-start gap-4">
+        <div className="m-3 m-lg-5">
+          <h1 className="fw-bold mb-3">About Me</h1>
 
-          <h4 className="d-flex align-items-center  gap-2">
+          <h4 className="d-flex align-items-center justify-content-start gap-2 mb-3">
             <FaRegFileLines color="#3B82F6" size="20px" />
             Bio
           </h4>
+
           <p className="text-aboutme">
             I am passionate about technology and focused on building my career
             in frontend development. With dedication, curiosity, and a
@@ -25,13 +26,13 @@ function Aboutme({}: Props) {
             and enjoy contributing proactively to team projects.
           </p>
 
-          <div className="card-aboutme">
+          <div className="d-flex flex-column flex-md-row gap-4">
             <AboutMeCard
               contents={[
                 {
                   icon: <IoSchoolOutline color="#3B82F6" size={20} />,
                   title: "Education",
-                  subtitle: "Colombia,Sena",
+                  subtitle: "Colombia, Sena",
                   text: "Systems technician 2020-2022",
                 },
                 {
@@ -56,11 +57,15 @@ function Aboutme({}: Props) {
             />
           </div>
         </div>
+
+        {/* Perfil lateral */}
         <div className="profile">
           <img src={edwinayerbe} alt="img" className="image-profile" />
-          <h3>Edwin Ayerbe</h3>
-          <p>Front-End Developer</p>
-          <button className="btn btn-primary">Download Resume</button>
+          <h3 className="mt-3">Edwin Ayerbe</h3>
+          <p className="text-secondary">Front-End Developer</p>
+          <button className="btn btn-primary w-100 w-lg-auto">
+            Download Resume
+          </button>
         </div>
       </div>
     </div>

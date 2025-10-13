@@ -1,10 +1,3 @@
-.about-me {
-  display: flex;
-  align-items: center;
-  color: aliceblue;
-  height: 100vh;
-  width: 40vw;
-}
 
 .text-aboutme {
   font-family: "Inter", sans-serif; 
@@ -17,7 +10,7 @@
 
 .card-container {
   background-color: #020817;
-  height: auto;
+  height: 250px;
   width: 22rem;
   border: solid 1px;
   color: white;
@@ -28,10 +21,7 @@
   color: #94a3b8;
 }
 
-.card-aboutme {
-  display: flex;
-  gap: 1rem;
-}
+
 
 .profile {
   margin: 8rem;
