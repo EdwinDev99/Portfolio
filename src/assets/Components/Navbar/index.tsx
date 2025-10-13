@@ -93,7 +93,7 @@ function Navbar() {
               <MdOutlineWaterDrop
                 size={22}
                 style={{ color: "white" }}
-                className="me-2"
+                className="m-2"
               />
             </li>
 

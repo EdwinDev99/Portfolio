@@ -1,15 +1,20 @@
+// Home.tsx
 import { TbBrandGithub } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
 import { CgMail } from "react-icons/cg";
-import "./index.css";
 import { motion } from "motion/react";
+import "./index.css";
 
 type Props = {};
 
-function index({}: Props) {
+function Home({}: Props) {
   return (
-    <div id="home" className="container-aboutme">
-      <section className="aboutme">
+    <div
+      id="home"
+      className="container-fluid min-vh-100 d-flex flex-column flex-md-row justify-content-center align-items-center p-2 p-md-5"
+    >
+      {/* Primera sección */}
+      <section className="text-white mb-3 mb-md-0 col-12 col-md-6 col-lg-4 px-2 px-md-0">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,7 +43,7 @@ function index({}: Props) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="fs-4"
+          className="fs-3 text-secondary"
         >
           Frontend Developer & Creative Coder
         </motion.p>
@@ -55,24 +60,26 @@ function index({}: Props) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9 }}
-          className="d-flex justify-content-between"
+          className="d-flex flex-wrap justify-content-start gap-2 "
         >
           <button className="btn btn-primary">Contact me</button>
-          <button className="btn btn-dark ">View Projects</button>
-          <a href="https://github.com/EdwinDev99" target="_banck">
-            <TbBrandGithub color="#4B5563" className="fs-3  m-1" />
+          <button className="btn btn-dark">View Projects</button>
+          <a href="https://github.com/EdwinDev99" target="_blank">
+            <TbBrandGithub color="#4B5563" className="fs-3" />
           </a>
           <a
             href="https://www.linkedin.com/in/edwin-ayerbe-749548210/"
             target="_blank"
           >
-            <FiLinkedin color="#4B5563" className="fs-3  m-1" />
+            <FiLinkedin color="#4B5563" className="fs-3" />
           </a>
-          <CgMail color="#4B5563" className="fs-3 m-1" />
+          <CgMail color="#4B5563" className="fs-3" />
         </motion.div>
       </section>
-      <motion.div
-        className="w-full max-w-md"
+
+      {/* Segunda sección */}
+      <motion.section
+        className="w-full max-w-md col-12 col-md-6 col-lg-4 px-2 px-md-0"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{
@@ -83,15 +90,12 @@ function index({}: Props) {
         }}
       >
         <div className="code-card">
-          {/* Header estilo editor */}
           <div className="code-header">
             <div className="circle red"></div>
             <div className="circle yellow"></div>
             <div className="circle green"></div>
             <span className="filename">developer.ts</span>
           </div>
-
-          {/* Bloque de "código" */}
           <pre>
             <code>
               <span className="comment">// Software Engineer</span>
@@ -101,7 +105,7 @@ function index({}: Props) {
               <span className="text-info">{"{"}</span>
               {"\n   "}
               <span className="contect">name:</span>{" "}
-              <span className="string">'Edwin ayerbe'</span>,{"\n   "}
+              <span className="string">'Edwin Ayerbe'</span>,{"\n   "}
               <span className="contect">skills:</span> [
               <span className="string">'React'</span>,{" "}
               <span className="string">'Node.js'</span>,{" "}
@@ -114,13 +118,13 @@ function index({}: Props) {
               <span className="contect">learning:</span>{" "}
               <span className="string">'Always'</span>
               {"\n"}
-              <span className="text-info">{"{"}</span>
+              <span className="text-info">{"}"}</span>
             </code>
           </pre>
         </div>
-      </motion.div>
+      </motion.section>
     </div>
   );
 }
 
-export default index;
+export default Home;
