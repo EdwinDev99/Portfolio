@@ -1,17 +1,4 @@
-.container-contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  color: aliceblue;
-}
 
-.contact-content {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
 
 .text-contact{
    font-family: "Inter", sans-serif; 

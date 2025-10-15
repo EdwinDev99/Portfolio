@@ -11,7 +11,10 @@ type Props = {};
 
 function Contact({}: Props) {
   return (
-    <div id="contact" className="container container-contact">
+    <div
+      id="contact"
+      className="container d-flex flex-column min-vh-100 justify-content-center text-white"
+    >
       <div>
         <h1>Get in touch</h1>
         <p className="text-contact">
@@ -19,7 +22,7 @@ function Contact({}: Props) {
           message. I'd love to hear from you!
         </p>
       </div>
-      <div className="contact-content">
+      <div className="d-flex align-items-center gap-2 ">
         <div>
           <h3>Contact information</h3>
           <p className="text-contact">
