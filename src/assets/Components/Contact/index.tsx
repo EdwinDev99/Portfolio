@@ -4,8 +4,8 @@ import { TbBrandGithub } from "react-icons/tb";
 import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
-
 import "./index.css";
+import FormContact from "./FormContact";
 
 type Props = {};
 
@@ -82,57 +82,7 @@ function Contact({}: Props) {
         </div>
 
         {/* Formulario */}
-        <div className="col-12 col-md-6">
-          <form>
-            <div className="form-container">
-              <div className="row g-3">
-                <div className="col-12 col-md-6 d-flex flex-column">
-                  <label htmlFor="name">Your Name</label>
-                  <input
-                    id="name"
-                    className="input-contact"
-                    type="text"
-                    placeholder="John Doe"
-                  />
-                </div>
-
-                <div className="col-12 col-md-6 d-flex flex-column">
-                  <label htmlFor="email">Your Email</label>
-                  <input
-                    id="email"
-                    className="input-contact"
-                    type="email"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
-
-              <div className="d-flex flex-column mt-3">
-                <label htmlFor="subject">Subject</label>
-                <input
-                  id="subject"
-                  className="input-contact"
-                  type="text"
-                  placeholder="How can I help you?"
-                />
-              </div>
-
-              <div className="d-flex flex-column mt-3">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  className="input-contact message"
-                  placeholder="Your message here..."
-                  rows={6}
-                />
-              </div>
-
-              <button className="btn btn-primary w-100 mt-4" type="submit">
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
+        <FormContact />
       </div>
     </div>
   );
