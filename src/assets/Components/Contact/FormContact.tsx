@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 type Form = {
   name: string;
@@ -14,11 +15,30 @@ function FormContact({}: Props) {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<Form>();
+
+  const onSubmit = (data: Form) => {
+    emailjs
+      .send(
+        "service_1e91wvh", // tu service ID
+        "template_p50d1gk", // tu template ID
+        data, // datos del formulario
+        "t3bgazav2G14LJ5fT" // tu public key
+      )
+      .then(() => {
+        alert("Correo enviado con éxito ✅");
+        reset();
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+        alert("Hubo un problema al enviar el correo ❌");
+      });
+  };
 
   return (
     <div className="col-12 col-md-6">
-      <form onSubmit={handleSubmit((data: Form) => console.log(data))}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-container">
           <div className="row g-3">
             <div className="col-12 col-md-6 d-flex flex-column">
@@ -56,7 +76,7 @@ function FormContact({}: Props) {
                 type="email"
                 placeholder="john@example.com"
               />
-              {errors?.name && (
+              {errors?.email && (
                 <p className="text-warning">{errors?.email?.message}</p>
               )}
             </div>
@@ -77,7 +97,7 @@ function FormContact({}: Props) {
               type="text"
               placeholder="How can I help you?"
             />
-            {errors?.name && (
+            {errors?.subject && (
               <p className="text-warning">{errors?.subject?.message}</p>
             )}
           </div>
@@ -101,7 +121,7 @@ function FormContact({}: Props) {
               placeholder="Your message here..."
               rows={6}
             />
-            {errors?.name && (
+            {errors?.message && (
               <p className="text-warning">{errors?.message?.message}</p>
             )}
           </div>
