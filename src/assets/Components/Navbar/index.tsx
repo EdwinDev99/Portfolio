@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { MdOutlineWaterDrop } from "react-icons/md";
+// import { MdOutlineWaterDrop } from "react-icons/md";
 import "./index.css";
 
 function Navbar() {
@@ -18,11 +18,12 @@ function Navbar() {
 
         {/* Ícono móvil + botón hamburguesa */}
         <div className="d-flex align-items-center d-md-none">
-          <MdOutlineWaterDrop
+          // esto es para poner modo claro y oscuro
+          {/* <MdOutlineWaterDrop
             size={22}
             style={{ color: "white" }}
             className="me-2"
-          />
+          /> */}
           <button
             className="navbar-toggler border-0"
             type="button"
@@ -87,9 +88,8 @@ function Navbar() {
                 Contact
               </a>
             </li>
-
             {/* Ícono solo visible en desktop */}
-            <li className="nav-item d-none d-md-flex align-items-center">
+            {/* <li className="nav-item d-none d-md-flex align-items-center">
               <MdOutlineWaterDrop
                 size={22}
                 style={{ color: "white" }}
@@ -101,7 +101,7 @@ function Navbar() {
               <button type="button" className="btn btn-primary mt-2 mt-md-0">
                 Resume
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
