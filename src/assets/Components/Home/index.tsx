@@ -5,9 +5,7 @@ import { CgMail } from "react-icons/cg";
 import { motion } from "motion/react";
 import "./index.css";
 
-type Props = {};
-
-function Home({}: Props) {
+function Home() {
   return (
     <div
       id="home"

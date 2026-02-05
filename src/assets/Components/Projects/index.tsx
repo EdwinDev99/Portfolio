@@ -4,9 +4,7 @@ import gamesale from "../../imgs/gamesale.png";
 
 import "./index.css";
 
-type Props = {};
-
-function Projects({}: Props) {
+function Projects() {
   return (
     <div id="projects" className="container container-project">
       <div>

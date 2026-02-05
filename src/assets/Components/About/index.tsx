@@ -5,9 +5,7 @@ import { FaRegFileLines } from "react-icons/fa6";
 import { IoSchoolOutline } from "react-icons/io5";
 import { PiBagSimpleBold } from "react-icons/pi";
 
-type Props = {};
-
-function Aboutme({}: Props) {
+function Aboutme() {
   return (
     <div id="about" className="container text-white">
       <div className="min-vh-100 d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">

@@ -3,9 +3,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub } from "react-icons/tb";
 import "./index.css";
 
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
   return (
     <footer className="footer py-4">
       <div className="container">

@@ -7,9 +7,7 @@ import { FiPhone } from "react-icons/fi";
 import "./index.css";
 import FormContact from "./FormContact";
 
-type Props = {};
-
-function Contact({}: Props) {
+function Contact() {
   return (
     <div
       id="contact"

@@ -8,9 +8,7 @@ type Form = {
   message: string;
 };
 
-type Props = {};
-
-function FormContact({}: Props) {
+function FormContact() {
   const {
     register,
     handleSubmit,
@@ -24,7 +22,7 @@ function FormContact({}: Props) {
         "service_1e91wvh", // tu service ID
         "template_p50d1gk", // tu template ID
         data, // datos del formulario
-        "t3bgazav2G14LJ5fT" // tu public key
+        "t3bgazav2G14LJ5fT", // tu public key
       )
       .then(() => {
         alert("Correo enviado con éxito ✅");

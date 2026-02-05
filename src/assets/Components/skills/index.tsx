@@ -1,8 +1,6 @@
 import "./index.css";
 
-type Props = {};
-
-function Skills({}: Props) {
+function Skills() {
   return (
     <div id="skills" className="container container-skills">
       <div>
