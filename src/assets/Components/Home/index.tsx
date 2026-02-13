@@ -60,8 +60,28 @@ function Home() {
           transition={{ duration: 0.6, delay: 0.9 }}
           className="d-flex flex-wrap justify-content-start gap-2 "
         >
-          <button className="btn btn-primary">Contact me</button>
-          <button className="btn btn-dark">View Projects</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contact me
+          </button>
+
+          <button
+            className="btn btn-dark"
+            onClick={() => {
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            View Projects
+          </button>
+
           <a href="https://github.com/EdwinDev99" target="_blank">
             <TbBrandGithub color="#4B5563" className="fs-3" />
           </a>
