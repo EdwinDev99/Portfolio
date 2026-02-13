@@ -1,6 +1,7 @@
 import CardProjects from "./CardProjects";
 import mealFinder from "../../imgs/mealfinder.png";
 import gamesale from "../../imgs/gamesale.png";
+import delisopas from "../../imgs/delisopas.png";
 
 import "./index.css";
 
@@ -30,6 +31,19 @@ function Projects() {
             </a>
           </CardProjects>
           <CardProjects
+            linkimg="https://deli-sopas-bogota-bafuwpv5v-edwin-ayerbes-projects.vercel.app/"
+            img={delisopas}
+            title="DeliSopas"
+            description="A restaurant management application that handles customer orders, product management, and multiple payment methods. It allows staff to create and process orders and track completed sales in a summary view."
+          >
+            <a
+              href="https://github.com/EdwinDev99/DeliSopas-React"
+              target="_blank"
+            >
+              <button className="btn btn-primary">Git Hub</button>
+            </a>
+          </CardProjects>
+          <CardProjects
             linkimg="https://edwindev99.github.io/react-ts-ejercicio/"
             img={gamesale}
             title="Game-Sale"
@@ -39,16 +53,6 @@ function Projects() {
               href="https://github.com/EdwinDev99/react-ts-ejercicios"
               target="_blanck"
             >
-              <button className="btn btn-primary">Git Hub</button>
-            </a>
-          </CardProjects>
-          <CardProjects
-            linkimg="https://edwindev99.github.io/Meal-Finder/"
-            img={mealFinder}
-            title="Meal-Finder"
-            description="Responsive application that consumes an API to display real-time recipes. Features a stylish search bar and reusable components for clean, scalable code."
-          >
-            <a href="">
               <button className="btn btn-primary">Git Hub</button>
             </a>
           </CardProjects>

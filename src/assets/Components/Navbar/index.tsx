@@ -18,8 +18,8 @@ function Navbar() {
 
         {/* Ícono móvil + botón hamburguesa */}
         <div className="d-flex align-items-center d-md-none">
-          // esto es para poner modo claro y oscuro
           {/* <MdOutlineWaterDrop
+          //  esto es para poner modo claro y oscuro
             size={22}
             style={{ color: "white" }}
             className="me-2"
